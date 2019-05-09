@@ -7,5 +7,5 @@ title: "Room Utilization"
 
 These visualizations were created for my Data Visualization course. Included is my write-up for the project so I do not repeat myself. 
 
-<embed src="fpdf/writeup.pdf" width="800px" height="2100px" />
+<embed src="assets/pdf/writeup.pdf" width="800px" height="2100px" />
 
