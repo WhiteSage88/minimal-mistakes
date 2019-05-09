@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: "Room Utilization"
+tags: Matplotlib Scrapy
 ---
 
 # Room Utilization Visualization
