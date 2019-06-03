@@ -8,7 +8,7 @@ Included is the animation I created for Introduction to Data Analytics course. I
 from rideindego.com . 
 
 <video width="320" height="240" controls>
-  <source src="assets/video/ani.mp4">
+  <source src="assets/video/ani.mp4" type="video/mp4" >
 </video>
 
 The code for the animation is below:
