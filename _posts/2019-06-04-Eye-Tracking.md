@@ -39,7 +39,7 @@ Brightwing's playstyle is that she is an area of effect healer. Just being near 
 <h1>Eye tracking</h1>
 With my hypothesis in place, I went forward and used <b>OpenCV</b> to track eye positions during videos I recorded of myself playing either Abathur or Brightwing. This was done by using a publicly available Haas Cascade for facial and eye recognition. Then I performed a contour finding process again using <b>OpenCV</b> to find the pupil. There are several tutorials that present you with premade code but I had to change it to fit the dimensions of the video. The final threshold and contour finding image was this:
 <br>
-<img src="/assets/images/stacked.png" alt="Contour" width="400" height="400">
+<img src="/assets/images/stacked.png" alt="Contour">
 <br>A CSV file of X-position Eye, Y-position Eye, X-Position Pupil, Y-Position Pupil, Pupil Radius, and TimeStamp was created to store all the data created from the videos. 
 <br>
 <img src="/assets/images/face.jpeg" alt="Face Eye Tracked" width="400" height="400">
@@ -61,3 +61,13 @@ After categorizing the data between left and right eyes, I tried to make sense o
 <img src="/assets/images/pupil_time.png" alt="Pupil Time" width="400" height="400">
 <img src="/assets/images/x_movement.png" alt="X Movemnt" width="400" height="400">
 <img src="/assets/images/y_movement.png" alt="Y Movement" width="400" height="400">
+<br>
+All this was interesting to see but it does not help me answer the question if I can predict what character I am playing based on my eye movements.
+<br>
+<h1>Neural Networks</h1>
+This is where I turned to <b>Keras</b> to create a neural network that would help me predict the character I was playing. It would take the X and Y pupil locations and what character it was as input but also take in account it is a time series. This lead me to create a LSTM (Long-Short Term Memory) RNN (Recurring Neural Network). The neural network was compiled to return a prediction of whether the points were similar to Abathur data, Brightwing data or Valla data. I didn't touch upon Valla but its another character that I used as a third category for normal, center screen, gameplay.
+<br> These were my results.
+<img src="/assets/images/abathur.png" alt="Aba Predition" width="400" height="400">
+<img src="/assets/images/brightwing.png" alt="Brightwing Prediction" width="400" height="400">
+<img src="/assets/images/valla.png" alt="Valla Prediction" width="400" height="400">
+<h1>NN Interpretation</h1>
