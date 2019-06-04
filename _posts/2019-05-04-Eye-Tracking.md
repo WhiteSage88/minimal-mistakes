@@ -14,7 +14,9 @@ in particular come to mind as far as where I am looking on the screen. Abathur, 
 <br>
 <br>
 
-<img src="/assets/aba.jpg" alt="Abathur">
+<img src="/assets/images/aba.jpg" alt="Abathur">
 <br>
 Abathur's playstyle revolves around a passive gameplay. The character's body does not physically play a role in the game. 
+Normally, a character would be in one of two/three lanes engaging the opposing team in fights. Abathur (Aba) does not do this. 
+His physical body has low health and any physical engagement would get him killed. He relies on 
 
