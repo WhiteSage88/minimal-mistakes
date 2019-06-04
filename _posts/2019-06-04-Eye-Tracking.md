@@ -49,6 +49,15 @@ As you can see from the image, a problem came up where my moustache was being re
 <br>
 I then tried <b> K-Means clustering</b>, setting the algorithm to find only two clusters. 
 <img src="/assets/images/incorr_kmeans.png" alt="Kmeans">
-This was incorrect because now we have one eye being grouped together with the false positive. I could have changed the algorithm to three clusters but that agian caused problems where true positive clusters were being split. 
-
-
+This was incorrect because now we have one eye being grouped together with the false positive. I could have changed the algorithm to three clusters but that agian caused problems where true positive clusters were being split. This is where I came upon <b>DBSCAN</b>. DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is another method of catagorization of points based on density and proximity of other points. The parameters for this algorithm are minimum amount of points near it for it to count as a cluster and the maximum distance to other points. This algorithm does NOT require a predetermined or known amount of clusters in comparison to KMeans. 
+<br> 
+<img src="/assets/images/bw_kmeans.png" alt="DBSCAN">
+<br>
+As the image above shows, I was able to cluster the left eye, right eye, and false positives (mainly my lips). I removed the false positives and labeled the remaining points 0 or 1. 
+<br>
+<h1>Data Visualization</h1>
+After categorizing the data between left and right eyes, I tried to make sense of the data by plotting it. These are the plots I came up with using data created by a Brightwing video. 
+<img src="/assets/images/pupil_locations.png" alt="Both Pupils">
+<img src="/assets/images/pupil_time.png" alt="Pupil Time">
+<img src="/assets/images/x_movement.png" alt="X Movemnt">
+<img src="/assets/images/y_movement.png" alt="Y Movement">
