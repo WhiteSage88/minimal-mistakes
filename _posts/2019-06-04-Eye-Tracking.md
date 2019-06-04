@@ -24,25 +24,19 @@ The bottom right is the minimap. It shows all teammate positions, all <b>visible
 I then asked myself "How often do I look at these locations and can I predict based off of eye movements which character I am 
 playing?". 
 <br>
-<br>
 <h1>Abathur</h1>
 <img src="/assets/images/aba.jpg" alt="Abathur">
-<br>
 Abathur's playstyle revolves around a passive gameplay. The character's body does not physically play a role in the game. 
 Normally, a character would be in one of two/three lanes engaging the opposing team in fights. Abathur (Aba) does not do this. 
 His physical body has low health and any physical engagement would get him killed. He relies on his main ability which is to place an extension of himself on a teammate to either deal damage or shield them. With this in mind, his main strength comes from being able to gain experience (an in game currency which makes the team stronger over time) with his frail body and this extension, effectivly being able to gain twice as much experience than his teammates. The downside is that he has to put himself in danger by being close to creep (small monsters that are automatically generated throughout the game and are sent down lanes) deaths to gain experience therefore exposing himself to the enemy team and possible death. He also releases a minion every 16 seconds which makes it possible for the enemy team to figure out his position.
 <br>
 This type of game play requires the player to look constantly to the bottom-right corner of the screen (the minimap) to always have knowledge of where his team is to aid them or if he is in possible danger of enemy players trying to find him. I hypothesized that about 50% of the time is spent looking at the minimap.
 <br>
-<br>
 <h1>Brightwing</h1>
 <img src="/assets/images/bw.jpg" alt="Brightwing">
-<br>
 Brightwing's playstyle is that she is an area of effect healer. Just being near a teammate, she is able to recuperate their health. Her skills require precision and prediction since in order for her to heal more she must cast a skill that has a travel time and must hit an enemy player in its center. Her unique ability is for her to fly to over to another player, where ever they are, and heal them for a percent of their health. This gives her a global presence since at any moement a 1v1 fight between players can turn to 2v1. Due to this, she must be aware of player positioning (bottom-right corner, minimap) and teammate's healths (top of screen, health bars). My hypothesis here is that there will be about a one-third split between looking at the minimap, middle of screen and the top of the screen throughout the game. 
 <br>
-<br>
 <h1>Eye tracking</h1>
-<br>
 With my hypothesis in place, I went forward and used <b>OpenCV</b> to track eye positions during videos I recorded of myself playing either Abathur or Brightwing. This was done by using a publicly available Haas Cascade for facial and eye recognition. Then I performed a contour finding process again using <b>OpenCV</b> to find the pupil. There are several tutorials that present you with premade code but I had to change it to fit the dimensions of the video. The final threshold and contour finding image was this:
 <br>
 <img src="/assets/images/stacked.png" alt="Contour">
@@ -50,6 +44,7 @@ With my hypothesis in place, I went forward and used <b>OpenCV</b> to track eye 
 <br>
 <img src="/assets/images/face.jpeg" alt="Face Eye Tracked">
 <br>
+<h1>Machine Learning</h1>
 As you can see from the image, a problem came up where my moustache was being recognized as an eye. Here I had to 1) Remove the possibility of false positives and 2) Classify positives into left and right eyes. Hard boundaries (eg. If the X-coordinate of the eye location was greater than 200, remove that data point) were an option but it did not account for possible head movements and therefore movements of the eye positions.
 <br>
 I then tried <b> K-Means clustering</b>, setting the algorithm to find only two clusters. 
