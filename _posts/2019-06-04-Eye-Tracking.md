@@ -14,6 +14,7 @@ in particular come to mind as far as where I am looking on the screen. Abathur a
 as I was playing that I would look at certain locations of the screen at different frequencies depending on which character I was playing. 
 <br>
 <img src="/assets/images/locations.png" alt="Locations">
+<br>
 The top circle points out the health bars of each team mate. This is more important when it comes to Brightwing since they are 
 a healing type character with global presence. 
 <br>
@@ -26,6 +27,7 @@ playing?".
 <br>
 <h1>Abathur</h1>
 <img src="/assets/images/aba.jpg" alt="Abathur">
+<br>
 Abathur's playstyle revolves around a passive gameplay. The character's body does not physically play a role in the game. 
 Normally, a character would be in one of two/three lanes engaging the opposing team in fights. Abathur (Aba) does not do this. 
 His physical body has low health and any physical engagement would get him killed. He relies on his main ability which is to place an extension of himself on a teammate to either deal damage or shield them. With this in mind, his main strength comes from being able to gain experience (an in game currency which makes the team stronger over time) with his frail body and this extension, effectivly being able to gain twice as much experience than his teammates. The downside is that he has to put himself in danger by being close to creep (small monsters that are automatically generated throughout the game and are sent down lanes) deaths to gain experience therefore exposing himself to the enemy team and possible death. He also releases a minion every 16 seconds which makes it possible for the enemy team to figure out his position.
@@ -34,6 +36,7 @@ This type of game play requires the player to look constantly to the bottom-righ
 <br>
 <h1>Brightwing</h1>
 <img src="/assets/images/bw.jpg" alt="Brightwing">
+<br>
 Brightwing's playstyle is that she is an area of effect healer. Just being near a teammate, she is able to recuperate their health. Her skills require precision and prediction since in order for her to heal more she must cast a skill that has a travel time and must hit an enemy player in its center. Her unique ability is for her to fly to over to another player, where ever they are, and heal them for a percent of their health. This gives her a global presence since at any moement a 1v1 fight between players can turn to 2v1. Due to this, she must be aware of player positioning (bottom-right corner, minimap) and teammate's healths (top of screen, health bars). My hypothesis here is that there will be about a one-third split between looking at the minimap, middle of screen and the top of the screen throughout the game. 
 <br>
 <h1>Eye tracking</h1>
@@ -67,7 +70,9 @@ All this was interesting to see but it does not help me answer the question if I
 <h1>Neural Networks</h1>
 This is where I turned to <b>Keras</b> to create a neural network that would help me predict the character I was playing. It would take the X and Y pupil locations and what character it was as input but also take in account it is a time series. This lead me to create a LSTM (Long-Short Term Memory) RNN (Recurring Neural Network). The neural network was compiled to return a prediction of whether the points were similar to Abathur data, Brightwing data or Valla data. I didn't touch upon Valla but its another character that I used as a third category for normal, center screen, gameplay.
 <img src="/assets/images/y_movement.png" alt="Y Movement" width="400" height="400">
-<br> These were my results.
+<br>
+These were my results.
+<br>
 <img src="/assets/images/abathur.png" alt="Aba Predition" width="400" height="400">
 <img src="/assets/images/brightwing.png" alt="Brightwing Prediction" width="400" height="400">
 <img src="/assets/images/valla.png" alt="Valla Prediction" width="400" height="400">
