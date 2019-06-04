@@ -13,5 +13,4 @@ from rideindego.com .
 
 The code for the animation is below:
 
-
-<embed src="/assets/pdf/indego.pdf" width="800px" height="1000px" />
+<iframe width="420" height="315" class="embed-responsive-item" src="assets/video/ani.mp4" frameborder="0" allowfullscreen></iframe>
