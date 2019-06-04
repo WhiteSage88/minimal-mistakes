@@ -70,9 +70,6 @@ All this was interesting to see but it does not help me answer the question if I
 <br>
 <h1>Neural Networks</h1>
 This is where I turned to <b>Keras</b> to create a neural network that would help me predict the character I was playing. It would take the X and Y pupil locations and what character it was as input but also take in account it is a time series. This lead me to create a LSTM (Long-Short Term Memory) RNN (Recurring Neural Network). The neural network was compiled to return a prediction of whether the points were similar to Abathur data, Brightwing data or Valla data. I didn't touch upon Valla but its another character that I used as a third category for normal, center screen, gameplay.
-<br>
-<img src="/assets/images/y_movement.png" alt="Y Movement" width="400" height="400">
-<br>
 These were my results.
 <br>
 <img src="/assets/images/abathur.png" alt="Aba Predition" width="400" height="400">
