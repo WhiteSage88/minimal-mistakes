@@ -10,13 +10,26 @@ I play video games. A lot of different kinds. RPGs, shooters, ARPGs and MOBAs. T
 their play styles are all different. One game in particular caught my attention, Heroes of the Storm (HotS) which is a MOBA 
 (Multiplayer Online Battle Arena) where two teams of five take control of a particular character and battle against each other 
 on differing maps. One unique thing that sets HotS apart from other MOBAs is the gameplay style certain charcters have. Three 
-in particular come to mind as far as where I am looking on the screen. Abathur, Brightwing and The Lost Vikings. 
+in particular come to mind as far as where I am looking on the screen. Abathur, Brightwing and The Lost Vikings. I was noticing 
+as I was playing that I would look at certain locations of the screen at different frequencies depending on which character I was playing. 
 <br>
+<img src="/assets/images/locations.png" alt="Locations">
+The top circle points out the health bars of each team mate. This is more important when it comes to Brightwing since they are 
+a healing type character with global presence. 
+<br>
+The middle circle is where the character is normally posiitoned. Its where I hypothesized that was where I maintained my view since that is where most of the action occured.
+<br>
+The bottom right is the minimap. It shows all teammate positions, all <b>visible</b> enemy team member positions, map objectives and warning pings from other players. I hypothesized that I would look at this location a lot during the course of the game.
+<br>
+I then asked myself "How often do I look at these locations and can I predict based off of eye movements which character I am 
+playing?". 
 <br>
 
 <img src="/assets/images/aba.jpg" alt="Abathur">
 <br>
 Abathur's playstyle revolves around a passive gameplay. The character's body does not physically play a role in the game. 
 Normally, a character would be in one of two/three lanes engaging the opposing team in fights. Abathur (Aba) does not do this. 
-His physical body has low health and any physical engagement would get him killed. He relies on 
+His physical body has low health and any physical engagement would get him killed. He relies on his main ability which is to place an extension of himself on a teammate to either deal damage or shield them. With this in mind, his main strength comes from being able to gain experience (an in game currency which makes the team stronger over time) with his frail body and this extension, effectivly being able to gain twice as much experience than his teammates. The downside is that he has to put himself in danger by being close to creep (small monsters that are automatically generated throughout the game and are sent down lanes) deaths to gain experience therefore exposing himself to the enemy team and possible death. 
+<br>
+This type of game play requires the controller to 
 
