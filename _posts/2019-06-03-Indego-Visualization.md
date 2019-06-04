@@ -4,6 +4,8 @@ title: "Indego Visualization"
 tags: Matplotlib Pandas
 ---
 
+#Indego Meets Matplotlib
+
 Included is the animation I created for Introduction to Data Analytics course. It uses the free data available from the ride share service
 from rideindego.com . 
 
