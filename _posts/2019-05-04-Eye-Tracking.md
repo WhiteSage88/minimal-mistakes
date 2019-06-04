@@ -43,4 +43,5 @@ Brightwing's playstyle is that she is an area of effect healer. Just being near 
 <br>
 <h1>Eye tracking</h1>
 <br>
+With my hypothesis in place, I went forward and used <b>OpenCV</b> to track eye positions during videos I recorded of myself playing either Abathur or Brightwing. This was done by using a publicly available Haas Cascade for facial and eye recognition. Then I performed a contour finding process again using <b>OpenCV</b> to find the pupil and created a csv file of X-position Eye, Y-position Eye, X-Position Pupil, Y-Position Pupil, Pupil Radius, and TimeStamp.  
 
