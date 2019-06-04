@@ -66,8 +66,16 @@ All this was interesting to see but it does not help me answer the question if I
 <br>
 <h1>Neural Networks</h1>
 This is where I turned to <b>Keras</b> to create a neural network that would help me predict the character I was playing. It would take the X and Y pupil locations and what character it was as input but also take in account it is a time series. This lead me to create a LSTM (Long-Short Term Memory) RNN (Recurring Neural Network). The neural network was compiled to return a prediction of whether the points were similar to Abathur data, Brightwing data or Valla data. I didn't touch upon Valla but its another character that I used as a third category for normal, center screen, gameplay.
+<img src="/assets/images/y_movement.png" alt="Y Movement" width="400" height="400">
 <br> These were my results.
 <img src="/assets/images/abathur.png" alt="Aba Predition" width="400" height="400">
 <img src="/assets/images/brightwing.png" alt="Brightwing Prediction" width="400" height="400">
 <img src="/assets/images/valla.png" alt="Valla Prediction" width="400" height="400">
-<h1>NN Interpretation</h1>
+<br>
+<h1>Interpretation of Results</h1>
+I changed various parameters as I was trying to figure out how to increase the accuracy of my model. I changed amount of layers, nodes, activation types, number of epochs but the answers came out relatively the same. 
+<br>
+I did not answer the question "Can I predict what character I am playing?" but found out there is a difference in eye movement patterns as the game progresses. There is a clear cut split from the beginning of the game play to the end. This I attribute it to the fact that as the game goes on, players are no longer bound to a lane (normally called the laning phase) and roam around the map. This is confirmed with the plot that shows pupil locations over time. Later in the game, map objectives and team fights occur more often therefore causing the player to lose focus on the minimap and concentrate more on player interactions. 
+<br>
+<h1>Conclusion</h1>
+For me to answer my original question, I believe I would need better equipment. The lighting for my face caused some problems when it came to eye recognition. This also played a role in very few lapses of data. I  would also need more videos (I recorded 10 games of each character) and also different subjects (It was only my gameplays). If I had more accurate data I would be able to build a stronger model and hopefully answer my initial question. But what the model predicted/showed was good enough for me. If it was able to determine changes in patterns, it can be used in other applications. 
