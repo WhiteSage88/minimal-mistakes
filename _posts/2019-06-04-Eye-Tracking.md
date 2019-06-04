@@ -43,5 +43,17 @@ Brightwing's playstyle is that she is an area of effect healer. Just being near 
 <br>
 <h1>Eye tracking</h1>
 <br>
-With my hypothesis in place, I went forward and used <b>OpenCV</b> to track eye positions during videos I recorded of myself playing either Abathur or Brightwing. This was done by using a publicly available Haas Cascade for facial and eye recognition. Then I performed a contour finding process again using <b>OpenCV</b> to find the pupil and created a csv file of X-position Eye, Y-position Eye, X-Position Pupil, Y-Position Pupil, Pupil Radius, and TimeStamp.  
+With my hypothesis in place, I went forward and used <b>OpenCV</b> to track eye positions during videos I recorded of myself playing either Abathur or Brightwing. This was done by using a publicly available Haas Cascade for facial and eye recognition. Then I performed a contour finding process again using <b>OpenCV</b> to find the pupil. There are several tutorials that present you with premade code but I had to change it to fit the dimensions of the video. The final threshold and contour finding image was this:
+<br>
+<img src="/assets/images/stacked.png" alt="Contour">
+<br>A CSV file of X-position Eye, Y-position Eye, X-Position Pupil, Y-Position Pupil, Pupil Radius, and TimeStamp was created to store all the data created from the videos. 
+<br>
+<img src="/assets/images/face.jpeg" alt="Face Eye Tracked">
+<br>
+As you can see from the image, a problem came up where my moustache was being recognized as an eye. Here I had to 1) Remove the possibility of false positives and 2) Classify positives into left and right eyes. Hard boundaries (eg. If the X-coordinate of the eye location was greater than 200, remove that data point) were an option but it did not account for possible head movements and therefore movements of the eye positions.
+<br>
+I then tried <b> K-Means clustering</b>, setting the algorithm to find only two clusters. 
+<img src="/assets/images/incorr_kmeans.png" alt="Kmeans">
+This was incorrect because now we have one eye being grouped together with the false positive. I could have changed the algorithm to three clusters but that agian caused problems where true positive clusters were being split. 
+
 
