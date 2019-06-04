@@ -24,12 +24,13 @@ The bottom right is the minimap. It shows all teammate positions, all <b>visible
 I then asked myself "How often do I look at these locations and can I predict based off of eye movements which character I am 
 playing?". 
 <br>
-
+<br>
+<h1>Abathur</h1>
 <img src="/assets/images/aba.jpg" alt="Abathur">
 <br>
 Abathur's playstyle revolves around a passive gameplay. The character's body does not physically play a role in the game. 
 Normally, a character would be in one of two/three lanes engaging the opposing team in fights. Abathur (Aba) does not do this. 
-His physical body has low health and any physical engagement would get him killed. He relies on his main ability which is to place an extension of himself on a teammate to either deal damage or shield them. With this in mind, his main strength comes from being able to gain experience (an in game currency which makes the team stronger over time) with his frail body and this extension, effectivly being able to gain twice as much experience than his teammates. The downside is that he has to put himself in danger by being close to creep (small monsters that are automatically generated throughout the game and are sent down lanes) deaths to gain experience therefore exposing himself to the enemy team and possible death. 
+His physical body has low health and any physical engagement would get him killed. He relies on his main ability which is to place an extension of himself on a teammate to either deal damage or shield them. With this in mind, his main strength comes from being able to gain experience (an in game currency which makes the team stronger over time) with his frail body and this extension, effectivly being able to gain twice as much experience than his teammates. The downside is that he has to put himself in danger by being close to creep (small monsters that are automatically generated throughout the game and are sent down lanes) deaths to gain experience therefore exposing himself to the enemy team and possible death. He also releases a minion every 16 seconds which makes it possible for the enemy team to figure out his position.
 <br>
-This type of game play requires the controller to 
+This type of game play requires the player to look constantly to the bottom-right corner of the screen (the minimap) to always have knowledge of where his team is to aid them or if he is in possible danger of enemy players trying to find him. I hypothesized that about 50% of the time is spent looking at the minimap.
 
