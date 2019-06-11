@@ -10,7 +10,6 @@ Link to script Github:
 <br>
 <h1>SDS Scrape for NJ RTK Compliance</h1> 
 
-<br<
 Beginning in March 2018, Stockton University recieved a surprise inspection by the New Jersey Right-to-Know (NJ-RTK) department
 of the Department of Health. This deparment insures compliance of institutions in relation to workers and their environments.
 I was to oversee what corrections needed to be done to be in or exceed compliance in the Unified Science Center, F-Wing and 
