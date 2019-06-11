@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: "SDS Scrape"
-tags: Scrapy
+tags: Scrapy Selenium
 ---
 
 <h1>SDS Scrape for NJ RTK Compliance</h1> 
@@ -18,10 +18,17 @@ This was a huge undertaking because not only did we need to check every binder b
 file.
 <br>
 <h3>Background Info</h3>
+<br>
 Safety Data Sheet(SDS) is a multi-page report for every chemical any manufacturer produces.
 This was printed out by either the manufacturer and sent with the chemical or printed out by the reciever here at Stockton if 
 the SDS wasn't supplied. 
 <br>
 Our inventory system at the time was Vertere. We purchased the system around 2006 and had been using it to tag and store information
 of any chemical that came and left at Stockton. 
+<h3>Purpose/Design</h3>
+<br>
+I had previous experience using <b>Scrapy</b> and <b>Selenium</b>. <b>Scrapy</b> is a <b>Python</b> scriptable scraper for HTML whileas <b>Selenium</b> is a scraper for Javascript enabled websites. With these tools, I decided that manually finding and downloading hundreds of files without redundancy (meaning there is no need to download the same sds again if it is in another room but a human might miss this) and be able to organize them for every room was going to take a lot of man-hours. I designed a script that would take all unique entries of "name, CAS number, manufacturer" and download those SDSs. Then the final script will read every chemical in each room and create a folder with copied SDS PDFs. This in turn will create a database of all SDSs for each room. 
+<h3>Scrapy/Selenium</h3>
+<br>
+
 
