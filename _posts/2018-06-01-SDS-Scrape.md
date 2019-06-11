@@ -6,7 +6,7 @@ tags: Scrapy Selenium
 #SDS Scrapy
 
 Link to script Github:
-<br><link>https://github.com/WhiteSage88/sds_scrape</link>
+<br><a href='https://github.com/WhiteSage88/sds_scrape'>https://github.com/WhiteSage88/sds_scrape</a>
 <br>
 <h1>SDS Scrape for NJ RTK Compliance</h1> 
 
